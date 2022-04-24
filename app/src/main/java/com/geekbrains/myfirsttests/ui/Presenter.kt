@@ -1,6 +1,8 @@
-package com.geekbrains.myfirsttests
+package com.geekbrains.myfirsttests.ui
 
-class Presenter(private val carRepoImpl: CarRepoImpl):Contract.MainActivityPresenter {
+import com.geekbrains.myfirsttests.data.CarRepoImpl
+
+class Presenter(private val carRepoImpl: CarRepoImpl): Contract.MainActivityPresenter {
 
     private var view: Contract.MainActivityView? = null
 

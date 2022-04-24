@@ -1,7 +1,10 @@
 package com.geekbrains.myfirsttests
 
 
-import android.view.View
+import com.geekbrains.myfirsttests.data.CarRepoImpl
+import com.geekbrains.myfirsttests.domain.Car
+import com.geekbrains.myfirsttests.ui.Contract
+import com.geekbrains.myfirsttests.ui.Presenter
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -18,6 +21,7 @@ class PresenterTest {
     @Mock
     private lateinit var view: Contract.MainActivityView
 
+
     @Before
     fun setUp() {
         MockitoAnnotations.initMocks(this)
@@ -32,7 +36,7 @@ class PresenterTest {
     }
 
     @Test
-    fun attachView() {
+    fun attachView_ReturnsTrue() {
         Assert.assertTrue(presenter.attachView(view))
     }
 
@@ -40,4 +44,6 @@ class PresenterTest {
     fun detachView_ReturnsTrue() {
         Assert.assertTrue(presenter.detachView())
     }
+
+
 }

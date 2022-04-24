@@ -1,4 +1,6 @@
-package com.geekbrains.myfirsttests
+package com.geekbrains.myfirsttests.ui
+
+import com.geekbrains.myfirsttests.domain.Car
 
 class Contract {
 

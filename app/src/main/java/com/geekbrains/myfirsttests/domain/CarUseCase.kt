@@ -1,4 +1,6 @@
-package com.geekbrains.myfirsttests
+package com.geekbrains.myfirsttests.domain
+
+import com.geekbrains.myfirsttests.domain.Car
 
 interface CarUseCase {
     fun create(car: Car)

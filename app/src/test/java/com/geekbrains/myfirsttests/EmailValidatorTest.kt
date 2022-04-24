@@ -1,5 +1,6 @@
 package com.geekbrains.myfirsttests
 
+import com.geekbrains.myfirsttests.ui.EmailValidator
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

@@ -1,4 +1,7 @@
-package com.geekbrains.myfirsttests
+package com.geekbrains.myfirsttests.data
+
+import com.geekbrains.myfirsttests.domain.Car
+import com.geekbrains.myfirsttests.domain.CarUseCase
 
 open class CarRepoImpl: CarUseCase {
 

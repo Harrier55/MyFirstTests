@@ -1,9 +1,12 @@
-package com.geekbrains.myfirsttests
+package com.geekbrains.myfirsttests.ui
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.geekbrains.myfirsttests.*
+import com.geekbrains.myfirsttests.data.CarRepoImpl
 import com.geekbrains.myfirsttests.databinding.ActivityMainBinding
+import com.geekbrains.myfirsttests.domain.Car
 
 class MainActivity : AppCompatActivity(), Contract.MainActivityView {
 
