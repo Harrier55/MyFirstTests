@@ -2,12 +2,14 @@ package com.geekbrains.myfirsttests
 
 import android.text.Editable
 import android.text.TextWatcher
+import java.util.*
 
 import java.util.regex.Pattern
 
 class EmailValidator : TextWatcher {
 
     internal var isValid = false
+
 
     override fun afterTextChanged(editableText: Editable) {
         isValid = isValidEmail(editableText)
@@ -35,5 +37,15 @@ class EmailValidator : TextWatcher {
         fun isValidEmail(email: CharSequence?): Boolean {
             return email != null && EMAIL_PATTERN.matcher(email).matches()
         }
+
+        fun returnArray():Array<String>{
+            return arrayOf("one","two","three")
+        }
+
+        val testObjectForNull:Objects? = null
+
+        val cloneEmailValidator = this
+
+
     }
 }
