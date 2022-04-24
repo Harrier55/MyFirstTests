@@ -1,6 +1,6 @@
 package com.geekbrains.myfirsttests
 
-class CarRepoImpl: CarUseCase {
+open class CarRepoImpl: CarUseCase {
 
     private val listCar = mutableListOf<Car>()
 

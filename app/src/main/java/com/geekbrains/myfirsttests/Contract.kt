@@ -7,8 +7,9 @@ class Contract {
     }
 
     interface MainActivityPresenter{
-        fun attachView(view: MainActivityView)
-        fun detachView()
+        fun attachView(view: MainActivityView):Boolean
+        fun detachView():Boolean
         fun loadListCar()
+
     }
 }

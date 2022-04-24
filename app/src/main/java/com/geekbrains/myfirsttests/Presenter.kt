@@ -4,18 +4,22 @@ class Presenter(private val carRepoImpl: CarRepoImpl):Contract.MainActivityPrese
 
     private var view: Contract.MainActivityView? = null
 
-    override fun attachView(view: Contract.MainActivityView) {
+    override fun attachView(view: Contract.MainActivityView):Boolean {
         this.view = view
+        return true
     }
 
-    override fun detachView() {
+    override fun detachView():Boolean {
         this.view = null
+        return true
     }
 
     override fun loadListCar() {
         carRepoImpl.createMockList()
-        view?.showListCar(carRepoImpl.getCar())
+        val list = carRepoImpl.getCar()
+        view?.showListCar(list)
     }
+
 
 
 
